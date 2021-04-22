@@ -1,0 +1,29 @@
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>order description</th>
+            <th>first name</th>
+            <th>last name</th>
+            <th>email</th>
+            <th>price</th>
+            <th>order date</th>
+            <th>order status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr mdbTableCol *ngFor="let order of ordersList">
+            <th>{{order.id}}</th>
+            <td>{{order.order_description}}</td>
+            <td>{{order.first_name}}</td>
+            <td>{{order.last_name}}</td>
+            <td>{{order.email}}</td>
+            <td>{{order.price}}</td>
+            <td>{{order.order_date}}</td>
+            <td>{{order.order_status}}</td>
+        </tr>
+    </tbody>
+</table>
+
